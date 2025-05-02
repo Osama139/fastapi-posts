@@ -2,7 +2,6 @@ from typing import List
 from sqlalchemy.orm import Session
 from .. import schemas, models, utils, database
 from fastapi import status, HTTPException, Depends, APIRouter
-from sqlalchemy.exc import IntegrityError
 
 router = APIRouter(
     prefix="/users",

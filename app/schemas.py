@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel, EmailStr
-from pydantic.types import conint
+from pydantic import Field
 
 
 #               ---------------- USER SCHEMA ----------------
@@ -59,5 +59,4 @@ class TokenData(BaseModel):
 #               ---------------- AUTH SCHEMA ----------------
 class Vote(BaseModel):
     post_id: int
-    dir: conint(le=1
-                )
+    dir: int = Field(le=1)
