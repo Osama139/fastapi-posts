@@ -14,7 +14,7 @@ jobs:
       DATABASE_USER: ${{secrets.DATABASE_USER}}
       DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
 #      DATABASE_NAME: ${{secrets.DATABASE_NAME}}
-      DATABASE_NAME: fastapi_test
+      DATABASE_NAME: fastapi
       SECRET_KEY: ${{secrets.SECRET_KEY}}
       ALGORITHM: ${{secrets.ALGORITHM}}
       ACCESS_TOKEN_EXPIRES_IN: ${{secrets.ACCESS_TOKEN_EXPIRES_IN}}
