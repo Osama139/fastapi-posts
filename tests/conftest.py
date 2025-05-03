@@ -11,7 +11,7 @@ from app.config import settings
 
 # Database connection with retry logic
 def create_db_engine():
-    SQLALCHEMY_DATABASE_URL = f"postgresql+psycopg2://{settings.database_user}:{settings.database_password}@{settings.database_host}:{settings.database_port}/{settings.database_name}_test"
+    SQLALCHEMY_DATABASE_URL = f"postgresql+psycopg2://{settings.database_user}:{settings.database_password}@{settings.database_host}:{settings.database_port}/{settings.database_name}"
 
     max_retries = 5
     retry_delay = 5  # seconds
